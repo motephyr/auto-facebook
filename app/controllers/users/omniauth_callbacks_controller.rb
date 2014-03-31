@@ -11,9 +11,12 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
             @user = User.find_or_create_for_#{provider}(env["omniauth.auth"])
   
             if @user.persisted?
-             @user.skip_confirmation!
-             flash[:notice] = "Signed in with #{provider.to_s.titleize} successfully."
+              @user.skip_confirmation!
+              flash[:notice] = "Signed in with #{provider.to_s.titleize} successfully."
               
+              auth = request.env['omniauth.auth']
+              token = auth['credentials']['token']
+              session[:fb_access_token] = token 
               
              sign_in_and_redirect @user, :event => :authentication, :notice => "Signed in successfully."
             else
