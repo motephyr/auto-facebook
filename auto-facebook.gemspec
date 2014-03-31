@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-# stub: auto-facebook 0.42.pre.changeByMark ruby lib
+# stub: auto-facebook 0.43.pre.changeByMark ruby lib
 
 Gem::Specification.new do |s|
   s.name = "auto-facebook"

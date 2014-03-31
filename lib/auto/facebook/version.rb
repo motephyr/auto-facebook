@@ -1,6 +1,6 @@
 module AutoFacebook
 
-  VERSION = "0.42-changeByMark"
+  VERSION = "0.43-changeByMark"
 end
 
 
