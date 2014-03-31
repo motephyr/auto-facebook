@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name = "auto-facebook"
-  s.version = "0.42.pre.changeByMark"
+  s.version = "0.43.pre.changeByMark"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
