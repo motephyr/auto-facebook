@@ -15,7 +15,7 @@ module AutoFacebook
       end
 
       def inject_to_devise_setting
-        inject_into_file 'config/initializers/devise.rb', "\n config.omniauth :facebook, Setting.facebook_app_id, Setting.facebook_secret, :scope => 'email'\n", :after => /# ==> OmniAuth/
+        inject_into_file 'config/initializers/devise.rb', "\n config.omniauth :facebook, Setting.facebook_app_id, Setting.facebook_secret, :scope => 'email, public_profile', :image_size => "normal", :secure_image_url => true'\n", :after => /# ==> OmniAuth/
       end
 
       def copy_initializer_of_omniauth

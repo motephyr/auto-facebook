@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-# stub: auto-facebook 0.43.pre.changeByMark ruby lib
+# stub: auto-facebook 0.43.changeByMark ruby lib
 
 Gem::Specification.new do |s|
   s.name = "auto-facebook"
-  s.version = "0.43.pre.changeByMark"
+  s.version = "0.43.changeByMark"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
