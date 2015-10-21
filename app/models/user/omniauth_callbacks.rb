@@ -10,6 +10,7 @@ class User
         credentials= response['credentials']
 
         if user = User.where( :fb_id => uid).first
+          user.update_attribute(:token ,credentials["token"] )
         elsif user = User.find_by_email(data["email"])
           user.update_attribute(:fb_id ,uid )
         else
